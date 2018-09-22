@@ -1,0 +1,16 @@
+// BASE THEME STYLES
+@import 'base/variables';
+@import "base/base";
+@import "base/type";
+
+
+// THEME STYLES
+@import "components/header";
+@import "components/section-one";
+@import "components/section-two";
+@import "components/section-three";
+@import "components/section-four";
+
+// PLUGIN STYLES
+@import "plugins/normalise";
+@import "plugins/particles";

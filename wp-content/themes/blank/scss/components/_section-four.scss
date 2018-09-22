@@ -1,0 +1,15 @@
+.section-four {
+	
+	.wrk-block {
+	    display: flex;
+	    flex-wrap: wrap;
+	    justify-content: space-between;
+	}
+
+	.wrk-item {
+	    background: white;
+	    flex-basis: 33.33%;
+	    height: 250px;
+	}
+
+}
