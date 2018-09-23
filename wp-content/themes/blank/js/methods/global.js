@@ -35,6 +35,13 @@ module.exports = {
 			} else {
 				$('.read-more').text('Read More');
 			}
+
+			if( $('.hidden-block').hasClass('open') ){
+				$('.read-more').text('See Less');
+			} else {
+				$('.read-more').text('See More');
+			}
+
 		});
 	}
 }

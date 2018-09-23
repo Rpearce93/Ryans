@@ -12,7 +12,7 @@
 	.contact__form.open {
 		height: auto;
 		position: relative;
-	    width: $container-md;
+	    max-width: $container-md;
 	    margin: 0 auto;
 	    background-color: #e3e3e3;
 	    padding: 10px 25px;
@@ -61,6 +61,10 @@
 
 	.contact__form--inner {
 	    padding-top: 60px;
+	}
+
+	.frm_primary_label {
+		font-family: $base-font !important;
 	}
 
 }

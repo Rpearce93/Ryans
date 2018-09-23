@@ -3,7 +3,7 @@
 
 		<h2>Languages and Tools</h2>
 
-		<div class="section_two-skills">
+		<div class="section_two-skills hidden-block">
 			<div class="item">
 				<img src="http://localhost/Ryans/wp-content/uploads/2018/08/html5-1.png" alt="">
 				<div class="hdn-text">
@@ -68,5 +68,8 @@
 				<div class="overlay"></div>
 			</div>
 		</div>
+
+		<a href="javascript:;" class="read-more">See More</a>
+
 	</div>
 </div>

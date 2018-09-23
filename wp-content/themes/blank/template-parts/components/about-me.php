@@ -3,7 +3,7 @@
 		<h2>About Me</h2>
 		<p>I'm a Junior Front-End Developer with 2 years of industry experience. I graduated from Plymouth University in 2016 after a 4 year degree in Web Application Development, including a placement year.</p>
 	</div>	
-	<div class="container-lrg section-padding-bottom">
+	<div class="container-sml section-padding-bottom">
 		<a href="javascript:;" class="read-more">Read More</a>
 		<div class="hidden-block">
 			<div class="text-block">

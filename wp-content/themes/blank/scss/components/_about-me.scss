@@ -4,17 +4,10 @@
 		transition: all 1s;
 		overflow: hidden;
 		max-height: 0px;
-		display: flex;
-		justify-content: space-between;
-		flex-wrap: wrap;
 		margin-top: 30px;
 		
 		&.open {
 			max-height: 1000px;
-		}
-
-		> div {
-			flex-basis: 48%;
 		}
 	}
 }

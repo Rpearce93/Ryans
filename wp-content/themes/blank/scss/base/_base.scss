@@ -65,6 +65,15 @@ body {
 	text-align: center;
 }
 
+.read-more {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.dark-back .read-more {
+	color: white;
+}
+
 i {
     border: solid $base-red;
 	border-width: 0 6px 6px 0;

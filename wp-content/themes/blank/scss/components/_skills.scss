@@ -1,17 +1,24 @@
 .skills {
 
 	.section_two-skills {
-	    display: flex;
-	    justify-content: left;
-	    flex-wrap: wrap;
-	    align-content: center;
-	    text-align: center;
+		transition: all 1s;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		text-align: center;
+		max-height: 550px;
+		overflow: hidden;
+		margin-bottom: 44px;
+
+		&.open {
+			max-height: 1000px;
+		}
 	}
 
 	.item {
-	    background: $base-white;
+	    background: $base-grey;
 	    flex-basis: 31%;
-	    margin: 10px 10px 10px;
+	    margin: 0px 10px 24px;
 	    padding: 74px 0px;
 	    position: relative;
 
@@ -67,11 +74,4 @@
 
 	}
 
-	.item:nth-child(3n+1) {
-	    margin-left: 0;
-	}
-
-	.item:nth-child(3n) {
-    	margin-right: 0;
-	}
 }
