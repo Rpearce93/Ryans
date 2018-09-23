@@ -24,4 +24,17 @@ module.exports = {
 		});
 
 	},
+
+	readMore: function() {
+
+		$('.read-more').click(function(){
+			$(this).parent().find('.hidden-block').toggleClass('open');
+
+			if( $('.hidden-block').hasClass('open') ){
+				$('.read-more').text('Read Less');
+			} else {
+				$('.read-more').text('Read More');
+			}
+		});
+	}
 }

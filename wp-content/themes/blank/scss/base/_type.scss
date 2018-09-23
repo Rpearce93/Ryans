@@ -11,6 +11,22 @@ h2 {
 	margin: 0px;
 }
 
+h4 {
+    font-size: 24px;
+}
+
+p {
+	padding: 0px;
+	margin: 0px 0px 15px 0px;
+	line-height: 20px;
+}
+
+a {
+	color: $base-red;
+	text-decoration: none;
+	font-weight: 600;
+}
+
 .trgh {
 	pointer-events: none;
 }

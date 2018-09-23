@@ -5,6 +5,7 @@ window.buildjs = {
 		buildjs.global.init();
 		buildjs.global.particlesInit();
 		buildjs.global.navbarScroll();
+		buildjs.global.readMore();
 		
 	},
 

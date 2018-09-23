@@ -19,10 +19,10 @@ get_header();
 		<main id="main" class="site-main">
 
 			<?php get_template_part( 'template-parts/components/section-one' ); ?>
-			<?php get_template_part( 'template-parts/components/section-two' ); ?>
-			<?php get_template_part( 'template-parts/components/section-three' ); ?>
+			<?php get_template_part( 'template-parts/components/skills' ); ?>
+			<?php get_template_part( 'template-parts/components/about-me' ); ?>
 			<?php get_template_part( 'template-parts/components/section-four' ); ?>
-			<?php get_template_part( 'template-parts/components/section-five' ); ?>
+			<?php get_template_part( 'template-parts/components/contact' ); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

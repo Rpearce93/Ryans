@@ -5,9 +5,9 @@
     background: transparent;
     width: 100%;
     padding: 36px 0px;
-    z-index: 999;
+    z-index: 9999;
     transition: all 1s;
-    border-bottom: none;
+    border-bottom: 2px solid transparent;
 
     &.scrolled {
     	background-color: $base-white;
