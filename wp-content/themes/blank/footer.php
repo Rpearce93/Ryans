@@ -15,8 +15,15 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
+			<div class="footer-links">
+				<!-- <a href="#">CV</a> -->
+				<a href="https://www.upwork.com/freelancers/~01b71d89761b29045f" target="_blank">Upwork</a>
+				<a href="https://www.facebook.com/ryanpearce1993" target="_blank">Facebook</a>
+			</div>
 
-
+			<div class="design-by">
+				<p>Designed and Built by Ryan Pearce</p>
+			</div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

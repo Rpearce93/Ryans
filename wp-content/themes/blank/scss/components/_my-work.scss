@@ -1,0 +1,85 @@
+.my-work {
+	
+	.wrk-block {
+		transition: all 1s;
+		display: flex;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+		text-align: center;
+		max-height: 324px;
+		overflow: hidden;
+		margin-bottom: 24px;
+
+		&.open {
+			max-height: 1000px;
+		}
+
+		@media(max-width: 914px) {
+	    	&.open {
+				max-height: 2000px;
+			}
+	    }
+	}
+
+	.wrk-item {
+	    background: $base-grey;
+	    flex-basis: 31%;
+	    margin: 0px 10px 24px;
+	    height: 300px;
+	    position: relative;
+
+	    @media(max-width: 914px) {
+	    	flex-basis: 47%;
+	    }
+
+	    @media(max-width: 600px) {
+	    	flex-basis: 80%;
+	    }
+	}
+
+	.wrk-item img {
+	    display: block;
+	    width: 200px;
+	    position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    transform: translate(-50%, -50%);
+	}
+
+	.wrk-item span {
+		transition: all 1s;
+	    position: absolute;
+	    left: 0;
+	    bottom: 0;
+	    width: 100%;
+	    text-align: left;
+	    padding: 12px 0px;
+
+	    @media(min-width: 1024px) {
+			opacity: 0;
+	    }
+	}
+
+	.wrk-item:hover span {
+	    opacity: 1;
+	}
+
+	.wrk-item span p{
+		padding: 0px 18px;
+		margin: 0px;
+		position: relative;
+		z-index: 999;
+		user-select: none;
+	}
+
+	.wrk-item .overlay{
+		background-color: $base-coal;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		height: 100%;
+		width: 100%;
+		opacity: 0.5;
+	}
+
+}

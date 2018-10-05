@@ -6,13 +6,15 @@
 
 // THEME STYLES
 @import "components/header";
-@import "components/section-one";
+@import "components/top";
 @import "components/skills";
 @import "components/about-me";
-@import "components/section-four";
+@import "components/testimonial-block";
+@import "components/my-work";
 @import "components/contact";
 @import "components/footer";
 
 // PLUGIN STYLES
 @import "plugins/normalise";
 @import "plugins/particles";
+@import "plugins/owl-carousel";

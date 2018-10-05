@@ -31,17 +31,76 @@ module.exports = {
 			$(this).parent().find('.hidden-block').toggleClass('open');
 
 			if( $('.hidden-block').hasClass('open') ){
-				$('.read-more').text('Read Less');
-			} else {
-				$('.read-more').text('Read More');
-			}
-
-			if( $('.hidden-block').hasClass('open') ){
 				$('.read-more').text('See Less');
 			} else {
 				$('.read-more').text('See More');
 			}
 
+		});
+	},
+
+	smoothScroll: function() {
+		$('a[href*="#"]')
+		  	.not('[href="#"]')
+		  	.not('[href="#0"]')
+		  	.click(function(event) {
+			    if (
+			      	location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+			      	&& 
+			      	location.hostname == this.hostname
+			    ) {
+		      	var target = $(this.hash);
+		      	target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+		      	if (target.length) {
+		        	event.preventDefault();
+		        	$('html, body').animate({
+		          		scrollTop: target.offset().top - 40
+		       	 	}, 1000, function() {
+		          	var $target = $(target);
+		          	$target.focus();
+		          	if ($target.is(":focus")) { 
+		            	return false;
+		         	} else {
+		            	$target.attr('tabindex','-1');
+		            	$target.focus(); 
+		          	};
+		        	});
+		      	}
+		    }
+		});
+	},
+
+	openHamburger: function() {
+		$('.hamburger').click(function(){
+			$('body').toggleClass('open');
+			$('.main-navigation').toggleClass('open');
+		});
+	},
+
+	checkTop: function() {
+		if( $(window).scrollTop() ){
+			$(".site-header").addClass("scrolled");
+		}
+	},
+
+	owlCarousel: function() {
+		$('.owl-carousel').owlCarousel({
+		    loop:true,
+		    autoplay:true,
+		    autoplayTimeout:5000,
+		    autoplayHoverPause:true,
+		    margin:10,
+		    responsive:{
+		        0:{
+		            items:1
+		        },
+		        600:{
+		            items:1
+		        },
+		        1000:{
+		            items:1
+		        }
+		    }
 		});
 	}
 }

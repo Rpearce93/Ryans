@@ -9,9 +9,18 @@
     transition: all 1s;
     border-bottom: 2px solid transparent;
 
+    @media(max-width: 976px){
+       padding: 0px;
+    }
+
     &.scrolled {
     	background-color: $base-white;
         border-bottom: 2px solid $base-coal;
+
+        @media(max-width: 976px){
+            background-color: none;
+            border-bottom: none;
+        }
 
     	.menu-menu-1-container ul li a {
     		color: $base-coal;
@@ -20,6 +29,7 @@
     	.menu-menu-1-container ul li a:hover {
     		color: $base-red;
     	}
+
     }
 }
 
@@ -34,6 +44,38 @@
     top: 50%;
     right: 0;
     transform: translateY(-50%);
+
+    @media(max-width: 976px){
+        display: none;
+        top: 0;
+        transform: none;
+    }
+}
+
+@media(max-width: 976px) {
+    .main-navigation.open {
+        display: block;
+        left: 0;
+        top: 0;
+        background: $base-white;
+        min-height: 1000px;
+        
+        ul li {
+            display: block;
+            width: 100%;
+        }
+
+        ul li a {
+            width: auto;
+            position: relative;
+            display: block;
+            color: $base-coal !important;
+        }
+
+        ul li:hover a {
+            color: $base-red !important;
+        }
+    }
 }
 
 .menu-menu-1-container ul {
@@ -56,8 +98,70 @@
 	text-transform: uppercase;
 	color: $base-red;
 	text-decoration: none;
+    outline: none;
 
 	&:hover {
 		color: $base-coal;
 	}
+}
+
+.hamburger {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 38px;
+    height: 28px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out 0.4s;
+
+    .open & {
+        transform: rotate(360deg);
+    }
+
+    @media(max-width: 976px){
+        display: block;
+    }
+}
+
+.bar {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: $base-red;
+    border-radius: 9px;
+    display: block;
+    &:nth-child(1) {
+        top: 0;
+    }
+    &:nth-child(4) {
+        top: 21px;
+    }
+    &:nth-child(1),
+    &:nth-child(4) {
+        transition:
+            top 0.15s linear,
+            opacity 0.1s linear 0.15s,
+            transform 0.1s linear 0.15s;
+    }
+    &:nth-child(2),
+    &:nth-child(3) {
+        top: 10px;
+        transition: all 0.15s linear;
+    }
+    .open &:nth-child(1),
+    .open &:nth-child(4) {
+        top: 160px;
+        opacity: 0;
+        transform: translate(-100%);
+    }
+    .open &:nth-child(4) {
+        transform: translate(100%);
+    }
+    .open &:nth-child(2) {
+        transform: rotate(135deg);
+    }
+    .open &:nth-child(3) {
+        transform: rotate(-135deg);
+    }
 }

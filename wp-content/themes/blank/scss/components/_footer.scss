@@ -1,4 +1,53 @@
 .site-footer {
 	padding: 40px 0px;
 	background: $base-coal;
+	color: $base-white;
+	position: relative;
+
+	p {
+		color: $base-white;
+		padding: 0px;
+		margin: 0px;
+	}
+
+	a {
+		color: $base-white;
+		padding: 0px;
+		margin: 0px;
+	}
+
+	a:not(:last-child) {
+    	border-right: 2px solid white;
+    	padding-right: 6px;
+    	@media(max-width: 600px) {
+			border: none;
+		}
+	}
+
+	.footer-links {
+		position: absolute;
+		left: 40px;
+		top: 50%;
+		transform: translateY(-50%);
+		@media(max-width: 600px) {
+			font-size: 12px;
+			position: relative;
+			top: auto;
+			left: auto;
+		}
+	}
+
+	.design-by {
+		position: absolute;
+		right: 40px;
+		top: 50%;
+		transform: translateY(-50%);
+		@media(max-width: 600px) {
+			font-size: 12px;
+			position: relative;
+			top: auto;
+			right: auto;
+			padding-top: 20px;
+		}
+	}
 }

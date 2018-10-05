@@ -3,7 +3,7 @@
 	.section_two-skills {
 		transition: all 1s;
 		display: flex;
-		justify-content: space-between;
+		justify-content: space-evenly;
 		flex-wrap: wrap;
 		text-align: center;
 		max-height: 550px;
@@ -13,6 +13,12 @@
 		&.open {
 			max-height: 1000px;
 		}
+
+		@media(max-width: 914px) {
+	    	&.open {
+				max-height: 2000px;
+			}
+	    }
 	}
 
 	.item {
@@ -21,6 +27,14 @@
 	    margin: 0px 10px 24px;
 	    padding: 74px 0px;
 	    position: relative;
+
+	    @media(max-width: 914px) {
+	    	flex-basis: 47%;
+	    }
+
+	    @media(max-width: 600px) {
+	    	flex-basis: 80%;
+	    }
 
 	    img {
 	    	transition: all .5s;

@@ -18,10 +18,11 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
-			<?php get_template_part( 'template-parts/components/section-one' ); ?>
+			<?php get_template_part( 'template-parts/components/top' ); ?>
 			<?php get_template_part( 'template-parts/components/skills' ); ?>
 			<?php get_template_part( 'template-parts/components/about-me' ); ?>
-			<?php get_template_part( 'template-parts/components/section-four' ); ?>
+			<?php get_template_part( 'template-parts/components/testimonial-block' ); ?>
+			<?php get_template_part( 'template-parts/components/my-work' ); ?>
 			<?php get_template_part( 'template-parts/components/contact' ); ?>
 
 		</main><!-- #main -->

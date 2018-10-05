@@ -34,6 +34,14 @@
 				) );
 				?>
 			</nav><!-- #site-navigation -->
+
+			<div class="hamburger">
+			    <span class="bar"></span>
+			    <span class="bar"></span>
+			    <span class="bar"></span>
+			    <span class="bar"></span>
+			</div>
+
 		</div>
 	</header><!-- #masthead -->
 
